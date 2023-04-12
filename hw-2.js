@@ -54,6 +54,6 @@
 // let info = prompt("Что вы хотите узнать о пользователе?", "for example, city of residence");
 // alert(user[info]);
 
-// // Задание 10
-// let name = prompt('Как вас зовут?');
-// alert(`Привет, ${name}!`);
+// Задание 10
+let name = prompt('Как вас зовут?');
+alert(`Привет, ${name}!`);
