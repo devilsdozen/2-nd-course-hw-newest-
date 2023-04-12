@@ -8,7 +8,7 @@
 
 // // Задание 3
 // const nameCreator = 'Brendon Eich';
-// alert(nameCreator);
+// alert(`Создателя JavaScript зовут ${nameCreator}`);
 
 // // Задание 4
 // let c = 10;
@@ -38,7 +38,7 @@
 // num--;
 // alert(num);
 
-// //Задание 8
+// // Задание 8
 // let age = Number(prompt("Сколько вам лет?"));
 // alert(age);
 
@@ -54,6 +54,6 @@
 // let info = prompt("Что вы хотите узнать о пользователе?", "for example, city of residence");
 // alert(user[info]);
 
-// Задание 10
-let name = prompt('Как вас зовут?');
-alert(`Привет, ${name}!`);
+// // Задание 10
+// let name = prompt('Как вас зовут?');
+// alert(`Привет, ${name}!`);
