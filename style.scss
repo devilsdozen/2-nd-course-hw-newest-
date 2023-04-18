@@ -34,8 +34,12 @@ body {
     font-weight: 300;
     font-size: 18px;
     line-height: 32px;
+    width: 481px;
 }
 .top__button {
+    
+    display: inline-block;
+    position: relative;
     width: 234px;
     height: 48px;
     background: #9C0332;
@@ -57,7 +61,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 31.5px;
+    gap: 31px;
 }
 .catalog__icon {
     display: flex;
@@ -105,6 +109,12 @@ body {
         padding-right: 16px;
     }
 
+    .top {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
     .top__title {
         font-size: 32px;
         line-height: 39px;
@@ -115,17 +125,25 @@ body {
         font-size: 14px;
         line-height: 22px;
         text-align: center;
-        width: 100%;  
+        width: 343px;  
     }
     .top__button {
-    margin-top: 32px;
-    margin-left: 70px;
-    margin-right: 70px;
+        margin-top: 32px;
     }
     .head__top {
         padding-top: 238px;
     }
-
+    .catalog {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 32px;
+        align-content: center;
+    }
+    .catalog__icon {
+        display: flex;
+        width: 343px;
+    }
     .catalog__img {
         width: 343px; 
     }
