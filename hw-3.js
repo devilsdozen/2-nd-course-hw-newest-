@@ -86,3 +86,23 @@
 //         console.log('Такого месяца не существует');
 //         break;        
 // }
+// // Задание 7 Создайте программу, проверяющую число на четность/нечетность по следующему алгоритму:
+// let anyNumber = prompt('Пожалуйста, введите любое число');
+// console.log(typeof(anyNumber));
+
+// // Тут что то не полчается, выводит всегда тип number.
+
+// if (anyNumber % 2 === 0) {
+//     console.log('Число четное');
+// } else {
+//     console.log('Число нечетное');
+// }
+
+// // Задание 8 Тут я вообще закопался=)
+// let clientOS = 0 && clientOS <= 1;
+// let platform = navigator.userAgent;
+// if (platform.indexOf('Android')) {
+//     console.log('Установите версию приложения для Android по ссылке');
+// } else {
+//     console.log('Вы зашли с другой платформы');
+// }
