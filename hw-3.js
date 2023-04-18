@@ -87,13 +87,13 @@
 //         break;        
 // }
 // // Задание 7 Создайте программу, проверяющую число на четность/нечетность по следующему алгоритму:
-let anyNumber = prompt('Пожалуйста, введите любое число');
+// let anyNumber = prompt('Пожалуйста, введите любое число');
 
-if (isNaN(anyNumber)) {
-    console.log('Вы ввели не число');
-}   else {
-    console.log(anyNumber % 2 === 0 ? 'Число четное' : 'Число нечетное');
-}
+// if (isNaN(anyNumber)) {
+//     console.log('Вы ввели не число');
+// }   else {
+//     console.log(anyNumber % 2 === 0 ? 'Число четное' : 'Число нечетное');
+// }
 // // Задание 8 Тут я вообще закопался=)
 // let clientOS = 0 && clientOS <= 1;
 // let platform = navigator.userAgent;
