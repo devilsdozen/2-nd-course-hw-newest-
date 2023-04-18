@@ -86,6 +86,7 @@
 //         console.log('Такого месяца не существует');
 //         break;        
 // }
+
 // // Задание 7 Создайте программу, проверяющую число на четность/нечетность по следующему алгоритму:
 // let anyNumber = prompt('Пожалуйста, введите любое число');
 
@@ -94,11 +95,25 @@
 // }   else {
 //     console.log(anyNumber % 2 === 0 ? 'Число четное' : 'Число нечетное');
 // }
-// // Задание 8 Тут я вообще закопался=)
-// let clientOS = 0 && clientOS <= 1;
-// let platform = navigator.userAgent;
-// if (platform.indexOf('Android')) {
-//     console.log('Установите версию приложения для Android по ссылке');
-// } else {
-//     console.log('Вы зашли с другой платформы');
+
+// // Задание 8
+// console.log('navigator', navigator.platform);
+// const platform = navigator.platform;
+// // вариант 1
+// let clientOS = 0;
+// if (platform === 'Android') {
+//     clientOS = 1;
+// }   else {
+//     clientOS = 0;
 // }
+// console.log(clientOS === 1 ? 'Установите версию приложения для Android по ссылке' : 'Установите версию приложения для iOS по ссылке');
+// // вариант 2
+// let clientOS = (platform === 'Android') ? 1 : (platform === 'iOS') ? 0 : null; 
+// console.log(clientOS === 1 ? 'Установите версию приложения для Android по ссылке' : 'Установите версию приложения для iOS по ссылке');
+// // вариант 3
+// let clientOS = (platform === 'Android') ? 1 : (platform === 'iOS') ? 2 : null; 
+// if (clientOS){
+// console.log(clientOS === 1 ? 'Установите версию приложения для Android по ссылке' : 'Установите версию приложения для iOS по ссылке');
+// }
+
+// // Задание 9  не знаю как решать
