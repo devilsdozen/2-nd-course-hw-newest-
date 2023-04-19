@@ -100,6 +100,60 @@ body {
     line-height: 32px;
 } */
 
+.game {
+    background-color: #000915;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__content {
+        gap: 32px;
+        width: 584px;
+    }
+    &__heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+    }
+    &__button {
+        padding-top: 13px;
+        padding-left: 74px;
+        position: absolute;
+        width: 234.06px;
+        height: 48.6px;
+        background: #9C0332;
+        border-radius: 30px;
+        margin-top: 44px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        transition: all .3s;
+        text-decoration: none;
+        &:hover {
+            background: #EB443F;
+        }
+    }
+    &__text {
+        margin-top: 32px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+// .img__game {
+//     width: 485px;
+//     height: 333px;
+//     padding-top: 233px;
+//     padding-bottom: 233px;
+// }
+
 @media (max-width: 767px) {
     .center {
         padding-left: 16px;
@@ -129,6 +183,7 @@ body {
     }
     .head__top {
         padding-top: 238px;
+        height: 735px;
     }
     .catalog {
         display: flex;
@@ -143,5 +198,35 @@ body {
     }
     .catalog__img {
         width: 343px; 
+    }
+    .game {
+        height: 654px;
+        background-color: #000915;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .game__heading {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        width: 100%;
+    }
+    .game__text {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        width: 100%;
+    }
+    .game__button {
+        margin-top: 32px;
+        margin-left: 70px;
+        margin-right: 70px;
+        
+    }
+    .img__game {
+        width: 344px;
+        height: 236px; 
     }
 }
