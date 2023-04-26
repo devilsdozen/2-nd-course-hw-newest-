@@ -22,11 +22,11 @@
 //     console.log(number(8));
 
 // 2 вариант (не получается)
-// let a = 6;
-//         function number(a) {
-//         a % 2 === 0 ? 'число четное' : 'число нечетное'; 
-//     }
-//     number();
+    // let a = 7;
+    //     function number(a) {
+    //     return a % 2 === 0 ? 'число четное' : 'число нечетное'; 
+    // }
+    // console.log(number(a));
 
 
     // Задание 3 3.1. Напишите функцию, которая принимает параметром число и выводит в консоль квадрат этого числа. 
@@ -83,10 +83,10 @@
     // checkNumber();
 
     // Вариант 2 (не могу понять что не так)
-    // Num1 = Number(prompt('введи первое'));
-    // Num2 = Number(prompt('введи второое'));
+    // const Num1 = Number(prompt('введи первое'));
+    // const Num2 = Number(prompt('введи второое'));
     // const numbers = (a, b) => {
-    // if (isnan(a)||isnan(b)) {
+    // if (isNaN(a) || isNaN(b)) {
     //     return 'Одно или оба значения не являются числом';
     // } 
     //     else return a * b;
