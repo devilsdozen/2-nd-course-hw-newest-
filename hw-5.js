@@ -109,11 +109,11 @@
 // Задание 7 Создайте объекты circle1 и circle2 со свойством radius. У объектов должен быть методам getArea, которое возвращает площадь круга через радиус, а также getPerimeter, который возвращает периметр окружности.
 
 // function getArea() {
-//     console.log(`площадь круга равна ${3.14 * this.radius ** 2}`);
+//     console.log(`площадь круга равна ${Math.PI * (this.radius ** 2)}`);
 // }
 
 // function getPerimeter() {
-//     console.log(`периметр круга равен ${this.radius * 2 * 3.14}`);
+//     console.log(`периметр круга равен ${this.radius * 2 * Math.PI}`);
 // }
     
 // const circle1 = {
