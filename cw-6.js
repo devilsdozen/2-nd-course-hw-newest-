@@ -128,3 +128,8 @@
 // console.log(newspaper['movies']['title']); // Superman Is A Flop
 
 // console.log(newspaper.business.title[1]); // E - так как вторая буква в с слове GE в предложении GE Stock Dips Again
+
+// Q & A 23.04.
+// const numbers = [1, 2, 3, 4, 5];
+// const [test, test2] = numbers;
+// console.log(test2);
