@@ -74,3 +74,20 @@
 // console.log(myCity.info.isPopular); // true
 // delete myCity.info['isPopular'];
 // console.log(myCity);
+
+// const name = 'Sam';
+// const postQty = 23;
+// const userProfile = {
+//     name: name,
+//     postQty: postQty,
+//     hasSignedAgreement: false,
+//     // сокращенный формат записи свойств
+//     // const userProfile = {
+//     //     name,
+//     //     postQty,
+//     //     hasSignedAgreement: false,
+// }
+// console.log(userProfile);
+
+// ____________________________________________________________
+// Зум
