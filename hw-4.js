@@ -43,3 +43,4 @@
 // for(let friday = 5; friday <=31; friday = friday + 7) {
 //     console.log(`Сегодня пятница, ${friday} - е число. Необходимо подготовить отчет`);
 // }
+
