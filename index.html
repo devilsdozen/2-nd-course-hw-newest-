@@ -45,7 +45,15 @@
            <a onclick="game1()" href="#" class="game__button">Играть!</a>
            <!-- <img class="img__game"  src="image/game-1.svg" alt="game-1"> -->
         </div>
-        <img class="img__game"  src="image/game-1.svg" alt="game-1">
+        <img class="img__game" src="image/game-1.svg" alt="game-1">
+    </section>
+    <section class="game center">
+        <div class="game__content">
+           <h2 class="game__heading">Запомни слова</h2> 
+           <p class="game__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+           <a onclick="game2()" href="#" class="game__button">Играть!</a>
+        </div>
+        <img class="img__game" src="image/game-2.svg" alt="game-2">
     </section>
     <script>
         function game1() {
@@ -75,6 +83,23 @@
                 
             }
             getSeason(numberMonth);
+        }
+    </script>
+    <script>
+        function game2() {
+            let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград' , 'Персик', 'Апельсин', 'Мандарин'];
+
+            arr = arr.sort(() => Math.random() - 0.5);
+            alert(arr);
+            let answerFirstEl = prompt('Чему равнялся первый элемент массива?');
+            let answerLastEl = prompt('Чему равнялся последний элемент массива?');
+            if (answerFirstEl === arr[0] && answerLastEl === arr[6]) {
+                alert('Поздравляем, вы угадали оба слова!');
+            } else if (answerFirstEl === arr[0] || answerLastEl === arr[6]) {
+                alert('Вы угадали одно слово! Вы были близки к победе!');
+            } else {
+                alert('Вы ответили неверно');
+            }
         }
     </script>
     <!-- <script src="hw-2.js"></script> -->
