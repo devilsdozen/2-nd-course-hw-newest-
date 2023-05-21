@@ -28,9 +28,9 @@
 //   // Вызываем функцию functionWithCallback и передаем в нее аргумент — колбэк-функцию greet
 //   functionWithCallback(greetWorld); // => Выведет в консоль "Привет, мир с колбэками!"
 
-function functionWithCallback(callback) {
-    callback();
-}
-functionWithCallback(() => {
-    console.log("Привет из анонимной стрелочной функции");
-  }); // => Выведет в консоль «Привет из анонимной стрелочной функции»
+// function functionWithCallback(callback) {
+//     callback();
+// }
+// functionWithCallback(() => {
+//     console.log("Привет из анонимной стрелочной функции");
+//   }); // => Выведет в консоль «Привет из анонимной стрелочной функции»

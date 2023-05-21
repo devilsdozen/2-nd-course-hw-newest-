@@ -48,26 +48,26 @@
 
 // Задание 6 Напишите функцию, которая будет принимать на вход целое число, а возвращать массив случайных целых чисел от 0 до переданного числа. Длина массива должна быть в 2 раза меньше переданного числа.
 
+// let num = 8;
 // const arr = [];
 
-// function getRandomArrNumbers(arr) {
-//     for (let i = 0; i < array.length; i++) {
-//         const element = array[i];
-        
+// for (let i = 0; i < (num / 2); i++) {
+//     arr[i] = Math.round(Math.random() * num); 
 //     }
-// }
 
+// console.log(arr);
 // getRandomArrNumbers(7); // [6, 2, 7] - массив заполнен случайными числами от 0 до 7, длина массива 7 / 2 = 3.5, округляем до ближайшего меньшего числа, получаем 3
 // getRandomArrNumbers(12); // [9, 11, 10, 9, 3, 0] - массив заполнен случайными числами от 0 до 12, длина массива 12 / 2 = 6
 
 // Задание 7 Напишите функцию, которая на вход принимает 2 целых числа, а в качестве результата возвращает случайное целое число в этом диапазоне.
 
-// let num1 = +prompt('введите первое число');
-// let num2 = +prompt('введите второе число');
-// function numRandom() {
-//     return Math.floor(Math.random * (Math.max - Math.min) + Math.min);
+// let num1 = Number(prompt('введите первое число'));
+// let num2 = Number(prompt('введите второе число'));
+// function numRandom(num1, num2) {
+//     return Math.round(Math.random() * (num2 - num1) + num1);
 // }
-// console.log(numRandom());
+// console.log(numRandom(5, 25));
+// console.log(numRandom(num1, num2));
 
 // Задание 8 Выведите в консоль текущую дату в стандартном режиме. Используйте один из трех рассмотренных в уроке способов.
 
