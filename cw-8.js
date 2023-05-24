@@ -12,6 +12,14 @@
 // console.log(plusTenFib); // => [11, 11, 12, 13, 15, 18]
 // console.log(onlyBigFib); // => [5, 8]
 
+
+
+
+
+
+
+
+
 // Эта функция работает с колбэком
 // Она пока не делает ничего полезного, просто вызывает переданный в нее колбэк
 // В параметрах функции есть callback, его название может быть любым
@@ -54,6 +62,13 @@
 //   console.log(`Привет, ${name} ${surname}!`);
 // };
 
+
+
+
+
+
+
+
 // function functionWithoutCallback() {
 //   greet("Глеб", "Фокин");
 // }
@@ -76,6 +91,10 @@
 //   callbackWithArrayLength([1, 1, 1, 1, 1], (l) => {
 //     console.log(l);
 //   });
+
+
+
+
 
 // function square(number) {
 //     return number * number;
@@ -100,8 +119,6 @@
 //   function squareRootEachArrayItem(arr) {
 //     const output = [];
 
-
-  
 //     for (let i = 0; i < arr.length; i++) {
 //       output.push(squareRoot(arr[i]));
 //     }
@@ -112,23 +129,60 @@
 //   console.log(squareEachArrayItem([1, 4, 9, 16])); // => [ 1, 16, 81, 256 ]
 //   console.log(squareRootEachArrayItem([1, 4, 9, 16])); // => [ 1, 2, 3, 4 ]
 
+
+
+
+
+
+// И вот так мы с вами естественным образом пришли к использованию колбэков в наших функциях. 
+
 function square(number) {
-    return number * number;
+  return number * number;
+}
+
+function squareRoot(number) {
+  return Math.sqrt(number);
+}
+
+function map(arr, ruleFunction) {
+  const output = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    output.push(ruleFunction(arr[i]));
   }
+
+  return output;
+}
+
+console.log(map([1, 4, 9, 16], square)); // => [ 1, 16, 81, 256 ]
+console.log(map([1, 4, 9, 16], squareRoot)); // => [ 1, 2, 3, 4 ]
+
+
+
+
+
+
+
+
+
+
+// function square(number) {
+//     return number * number;
+//   }
   
-  function map(arr, ruleFunction) {
-    const output = [];
+//   function map(arr, ruleFunction) {
+//     const output = [];
   
-      // Добавил в консоль лог для отладки
-      console.log('ruleFunction', ruleFunction);
+//       // Добавил в консоль лог для отладки
+//       console.log('ruleFunction', ruleFunction);
   
-    for (let i = 0; i < arr.length; i++) {
-      output.push(ruleFunction(arr[i]));
-    }
+//     for (let i = 0; i < arr.length; i++) {
+//       output.push(ruleFunction(arr[i]));
+//     }
   
-    return output;
-  }
+//     return output;
+//   }
   
-  // ОШИБКА: написано square() вместо square
-  console.log(map([1, 4, 9, 16], square)); // => Uncaught TypeError: ruleFunction is not a function
+//   // ОШИБКА: написано square() вместо square
+//   console.log(map([1, 4, 9, 16], square)); // => Uncaught TypeError: ruleFunction is not a function
   
